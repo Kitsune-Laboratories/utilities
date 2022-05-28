@@ -1,0 +1,22 @@
+{
+  "name": "@kitsune-softworks/utilities",
+  "version": "1.0.0",
+  "description": "Random stuff used in Node.js",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "typescript ./test/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kitsune-Softworks/Utilities.git"
+  },
+  "author": "Senko-san",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kitsune-Softworks/Utilities/issues"
+  },
+  "homepage": "https://github.com/Kitsune-Softworks/Utilities",
+  "devDependencies": {},
+  "dependencies": {}
+}
