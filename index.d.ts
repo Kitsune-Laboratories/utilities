@@ -6,7 +6,17 @@ declare module "@kitsune-softworks/utilities" {
     export function randomNumber(number: number): number;
 
     /**
-     * @param {number} time in milliseconds
+     * @param time in milliseconds
      */
     export function wait(time: number): Promise<void>;
+
+    /**
+     * @param url invalid URLs will return null
+     */
+    export function fetchHostUrl(url: string): string | null;
+
+    /**
+     * @param url invalid URLs will return null
+     */
+    export function fetchRootUrl(url: string): string | null;
 }
