@@ -1,17 +1,17 @@
 {
-  "name": "@kitsune-softworks/utilities",
+  "name": "@kitsune-laboratories/utilities",
   "version": "1.1.0",
   "description": "Random stuff used in Node.js",
   "main": "index.js",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kitsune-Softworks/Utilities.git"
+    "url": "git+https://github.com/Kitsune-Laboratories/Utilities.git"
   },
   "author": "Senko-san",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Kitsune-Softworks/Utilities/issues"
+    "url": "https://github.com/Kitsune-Laboratories/Utilities/issues"
   },
-  "homepage": "https://github.com/Kitsune-Softworks/Utilities"
+  "homepage": "https://github.com/Kitsune-Laboratories/Utilities"
 }
