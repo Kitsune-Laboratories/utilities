@@ -25,11 +25,20 @@ function fetchRootUrl(url) {
 	return host != null && uParts.length > 1 ? host = uParts[1] + "." + uParts[0] : host;
 }
 
+function owoify(text) {
+	if (typeof text !== "string") throw new TypeError(`Expected a string but got "${typeof text}"`);
+
+	text = text.replace(/l|g/gi, "W").replace(/l|g/gi, "w");
+
+	return text;
+}
+
 module.exports = {
 	randomArrayItem,
 	randomNumber,
 	wait,
 	spliceArray,
 	fetchRootUrl,
-	fetchHostUrl
+	fetchHostUrl,
+	owoify
 };

@@ -19,4 +19,9 @@ declare module "@kitsune-softworks/utilities" {
      * @param url invalid URLs will return null
      */
     export function fetchRootUrl(url: string): string | null;
+
+    /**
+     * @param text to Owoify
+     */
+    export function owoify(text: string): string;
 }
