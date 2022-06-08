@@ -28,9 +28,13 @@ function fetchRootUrl(url) {
 function owoify(text) {
 	if (typeof text !== "string") throw new TypeError(`Expected a string but got "${typeof text}"`);
 
-	text = text.replace(/l|g/gi, "W").replace(/l|g/gi, "w");
-
-	return text;
+	return text.replaceAll(/(?:l)/g, "w")
+		.replaceAll(/(?:L)/g, "W")
+		.replaceAll(/!k+/g, ` ${randomArrayItem(["OwO", "UwU", ">w<", "^w^", ">w<", "^w^", "YwY", "AwA"])}`)
+		.replaceAll("u", "wu")
+		.replaceAll("U", "Wu")
+		.replaceAll("o", "w")
+		.replaceAll("O", "W");
 }
 
 module.exports = {

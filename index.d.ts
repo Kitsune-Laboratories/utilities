@@ -22,6 +22,7 @@ declare module "@kitsune-softworks/utilities" {
 
     /**
      * @param text to Owoify
+     * @operators `!k` for a face
      */
     export function owoify(text: string): string;
 }
