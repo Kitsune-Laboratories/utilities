@@ -1,3 +1,5 @@
+import pino from "pino";
+
 declare module "@kitsune-softworks/utilities" {
     export function randomArrayItem(array: any[]): Array<any>;
 
@@ -25,4 +27,11 @@ declare module "@kitsune-softworks/utilities" {
      * @operators `!k` for a face
      */
     export function owoify(text: string): string;
+
+    export function print(): void;
+    export function warn(): void;
+    export function error(): void;
+    export function debug(): void;
+    export function fatal(): void;
+    export function getLogger(): pino;
 }
