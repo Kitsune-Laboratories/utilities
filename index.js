@@ -63,23 +63,23 @@ module.exports = {
 	},
 
 	print(...args) {
-		pino.info(...args);
+		pino.info(args);
 	},
 
 	warn(...args) {
-		pino.warn(...args);
+		pino.warn(args);
 	},
 
 	error(...args) {
-		pino.error(...args);
+		pino.error(args);
 	},
 
 	debug(...args) {
-		pino.debug(...args);
+		pino.debug(args);
 	},
 
 	fatal(...args) {
-		pino.fatal(...args);
+		pino.fatal(args);
 	},
 
 	getLogger() {
