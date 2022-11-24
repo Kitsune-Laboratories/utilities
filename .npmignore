@@ -1,2 +1,4 @@
 .eslintrc
 .gitignore
+test.js
+.vscode
