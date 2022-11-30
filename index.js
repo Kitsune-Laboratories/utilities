@@ -13,7 +13,7 @@ module.exports = {
 
 	spliceArray(array, index) {
 		if (array.constructor !== Array) throw new TypeError(`Expected an Array but got "${typeof array}"`);
-		if (typeof index !== "number") throw new TypeError(`Expected a Number but got "${typeof number}"`);
+		// if (typeof index !== "number") throw new TypeError(`Expected a Number but got "${typeof number}"`);
 
 		return array.splice(array.indexOf(index), 1);
 	},
