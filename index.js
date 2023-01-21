@@ -63,6 +63,7 @@ module.exports = {
 
 	owoify(text, probability = 0.75) {
 		if (typeof text !== "string") throw new TypeError(`[owoify]: Expected a String but got "${typeof text}"`);
+		const faces = ["OwO", "UwU", ">w<", "^w^", ">w<", "^w^", "YwY", "AwA"]
 
 		let newString = "";
 		for (let i = 0; i < text.length; i++) {
@@ -72,7 +73,7 @@ module.exports = {
 				newString += text[i];
 			}
 		}
-		return newString.replaceAll(/!k+/g, `${this.randomArrayItem(["OwO", "UwU", ">w<", "^w^", ">w<", "^w^", "YwY", "AwA"])}`);
+		return newString.replaceAll(/!k+/g, faces[Math.floor(Math.random() * faces.length)]);
 	},
 
 	_insertString(firstString, index, string) {

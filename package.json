@@ -1,6 +1,6 @@
 {
   "name": "@kitsune-labs/utilities",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Random stuff used in Node.js",
   "main": "index.js",
   "types": "index.d.ts",
