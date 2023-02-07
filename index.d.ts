@@ -35,7 +35,7 @@ export function fetchHostUrl(url: string): string | null;
 /**
  * @param url invalid URLs will return null
  */
-export function fetchRootUrl(url: string): string | null;
+export function fetchRootUrl(url: string): string;
 
 /**
  * @param text to Owoify
@@ -49,6 +49,6 @@ export function debug(): void;
 export function fatal(): void;
 export function getLogger(): pino.Logger;
 export function convertToMs(time: string): number;
-export function randomArrayItem(array: any[]): Array < any > ;
+export function randomArrayItem(array: any[]): any;
 export function spliceArray(array: any[], index: number): Array < any > ;
 export function randomNumber(number: number): number;
