@@ -42,11 +42,11 @@ export function fetchRootUrl(url: string): string;
  * @argument `!k` for a face
  */
 export function owoify(text: string): string;
-export function print(): void;
-export function warn(): void;
-export function error(): void;
-export function debug(): void;
-export function fatal(): void;
+export function print(any): void;
+export function warn(any): void;
+export function error(any): void;
+export function debug(any): void;
+export function fatal(any): void;
 export function getLogger(): pino.Logger;
 export function convertToMs(time: string): number;
 export function randomArrayItem(array: any[]): any;
